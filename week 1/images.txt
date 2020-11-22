@@ -1,0 +1,3 @@
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+docker101tutorial   latest              9fc8942909b6        3 minutes ago       27.2MB
+alpine/git          latest              76a4083eacef        2 days ago          28.4MB
