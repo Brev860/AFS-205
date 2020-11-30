@@ -1,0 +1,47 @@
+OOP stands for Object Oriented Programming.
+
+These languages are object-oriented EXCEPT: C
+
+
+What is inheritance? class extends another class
+
+
+class extends another class? all data members of a class are declared private
+
+What is polymorphism? ability to take more than one form
+
+What is abstraction? ignoring irrelevant features
+
+What does .py file extension tell us? 
+
+What's an advantage of using Python? It's an easy to learn, powerful programming language.
+
+What sources are available from the Python website for all platforms? interpreter and extensive standard libraries
+
+The prerequisites for Python are: (select all that apply) Python, VS Code, VS Code Python Extension
+
+get-pip.py command is used for installing Python in which operating system? Linux
+
+brew install python3 command is used for installation of Python in the MacOS operating system.
+
+The integrated development environment (IDE) we are using for this course is Visual Studio Code.
+
+Python is a suitable extension language for customizable applications.
+
+Why do you need Python interpreter? to read and execute code
+
+get-pip.py command is used for installiton of Python in Linux. 
+
+Software objects model real-world objects.
+
+What command do you need to install Python on Windows? system install work well with windows
+
+Wha t is Object Oriented Programming? An approach for building a software system that bundles procedures and data structures together
+
+
+
+
+
+
+
+
