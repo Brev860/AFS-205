@@ -1,0 +1,5 @@
+Redirect 301 /old.html https://bryanuniversity.on.worldcat.org/search?queryString=docker#/oclc/933784183
+
+ErrorDocument 404 /404.html
+
+ErrorDocument 500 /404.html
