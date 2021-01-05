@@ -1,0 +1,16 @@
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl delete -f ./.k8s
+configmap "docker-env-mongo-production-env" deletedt>
+deployment.apps "mongo" deleted
+service "mongo" deleted
+deployment.apps "nginx" deleted
+service "nginx" deleted
+deployment.apps "redis" deleted
+service "redis" deleted
+error: unable to recognize ".k8s\\fsw205-network-networkpolicy.yaml": no matches for kind "NetworkPolicy" in version "extensions/v1beta1"
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get pods        
+No resources found in default namespace.
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get deployments
+No resources found in default namespace.
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get services   
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   36d

@@ -1,0 +1,18 @@
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get version
+Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.3", GitCommit:"1e11e4a2108024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:50:19Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"windows/amd64"}
+8024935ecfcb2912226cedeafd99df", GitTreeState:"clean", BuildDate:"2020-10-14T12:41:49Z", GoVersion:"go1.15.2", Compiler:"gc", Platform:"linux/amd64"}
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get deployments
+No resources found in default namespace.
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get pods       
+No resources found in default namespace.
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get services
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get run nginx-server --image=nginError: unknown flag: --image
+See 'kubectl get --help' for usage.
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get run nginx-server
+error: the server doesn't have a resource type "run"
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get deployments
+No resources found in default namespace.
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get pods
+No resources found in default namespace.
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl delete deployment nginx-server  

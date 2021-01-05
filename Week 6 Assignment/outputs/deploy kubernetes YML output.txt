@@ -1,0 +1,24 @@
+ 
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl apply -f ./.k8s                  
+configmap/docker-env-mongo-production-env created
+deployment.apps/mongo created
+service/mongo created
+service/nginx created
+deployment.apps/redis created
+service/redis created
+error: unable to recognize ".k8s\\fsw205-network-networkpolicy.yaml": no matches for kind "NetworkPolicy" in version "extensions/v1beta1"
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+mongo   0/1     1            0           12s
+nginx   0/1     1            0           12s
+redis   0/1     1            0           12s
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get services   
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+mongo        ClusterIP   10.105.148.35   <none>        27017/TCP        38s
+redis        ClusterIP   10.102.6.203    <none>        6379/TCP         38s
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get pods
+NAME                     READY   STATUS             RESTARTS   AGE
+nginx-767c9bd594-5zfqr   0/1     ImagePullBackOff   0          49s
+redis-79f4c4f497-8b2r6   0/1     ImagePullBackOff   0          49s
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl port-forward nginx-767c9bd594-5zferror: unable to forward port because pod is not runni
+PS C:\Dev\bryan-university\AFS-205\Week 6 Assignment> kubectl get run nginx-server --image=nginx:alpine                                                                                       qr 8080:80
+See 'kubectl get --help' for usage.
