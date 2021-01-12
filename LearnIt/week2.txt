@@ -1,0 +1,84 @@
+A(n) image is an insert, immutable, file that essentially a snapshot of a container.
+
+The Docker container is an executable package of applications and its dependencies bundled together, it gives all the instructions for the solution you are looking to run.
+
+The container is built using Docker images, and the command to run those images is Run.
+
+1 Docker Compose/ 2 Docker Swarm/ 3 Docker daemon
+
+1 Visualize and identify performance bottlenecks, overloaded severs or potential DDoS attacks.
+2
+Improve and optimize performance with intelligence advice and recommendations.
+3
+Get Notified when something is wrong with the application infrastructure.
+4
+Plan web application capacity and performance.
+5
+Keep track of the systems running Web processes.
+
+1
+NGINX Amplify Agent
+2
+NGINX Amplify web UI
+3
+NGINX Amplify Backend
+
+A manager node maintains cluster mangement taks.
+Worker nodes recieve and execute tasks from the manager node.
+NGINX Controller, centralized monitoring and management.
+NGINX Controller allowed effortlessly mange load balances, API gateways and sevice mesh deployment at scale across a multi-cloud environment from single pane of glass.
+NGINX Unit is a dynamic application server from NGINX, inc open source support for multiple languages and a REST API-driven configuration
+
+1
+NGINX Plus
+2
+NGINX controller
+3
+NGINX Unit
+4
+NGINX Web Application Firewall
+5
+NGINX Amplify
+
+Image depict the state of the a container: all the above
+
+You build Dockerfile to get an image and you run image to get a container
+
+Build Dockerfile: Docker save -o my_fille.tar my_imge_id
+
+Dokcer CLI which is responsible to take Docker commands and transform to call Docker server comands.
+
+An image is an snapshot of a container. You can make images from a container (new "snapshots"), and you can also start new ontainers form an image.
+
+When source code is compile and build, it is called an application.
+
+Many organizations, such as Amazon, eBay, and Netlix, have solved this problem by adopting what is now know as the Microservices Achitecture pattern.
+
+
+ Instead of building a single monstrous, monolithic application, the idea is to split your application into set of smaller, interconnected services.
+
+NGINX is open source software for web serving, revese proxing, caching,load balancing, media streaming, and more. It started out as a web server designed for maximum performance.
+
+NGINX revolutionized how servers operated high-performance contexts and became the faster web server available.
+
+Image are created with the build command, and they produce a container when started with run.
+
+ Images are stored in a Docker registry such as registry.hub.docker.com.
+
+ IMAGE ID is teh first 12 charaters of the true identified for an image.
+
+VIRTUAL SIZE is virtual because its adding up the sizes of all the distinct underlying layers.
+
+The value in the RESPOSITORY column comes from the -t flag of the docker build command, or from docker tag -ing and existing image.
+
+ Docker main frustrations is the seemingly constant buildup of untagged images and stopped containers.
+
+ We can remove all untagged images by combining docker rmi with the recent dangling = true query. docker images -q --filter (dangling= true | xargs docker rmi )
+
+Docker won't be able to romove images that are behind existing containers, so you may have to remove stopped containers with docker rm first
+
+Because Image can become quite large, images are designed to be composed of layers of other images, allowing a minimal amount of data to be sent when transfering images over the network.
+
+
+
+

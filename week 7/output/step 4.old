@@ -1,0 +1,93 @@
+PS C:\Dev\bryan-university\AFS-205\week 7> docker stack deploy -c docker-compose.yml  capstoneAFS205
+Ignoring unsupported options: build
+
+Ignoring deprecated options:
+
+container_name: Setting the container name is not supported.
+
+failed to find a Stack API version
+PS C:\Dev\bryan-university\AFS-205\week 7> docker stack deploy -c docker-compose.yml  capstonafs205
+Ignoring unsupported options: build
+Ignoring deprecated options:
+
+container_name: Setting the container name is not supported.
+
+failed to find a Stack API version
+PS C:\Dev\bryan-university\AFS-205\week 7> docker stack deploy -c docker-compose.yml  brevafs205
+Ignoring unsupported options: build
+Ignoring deprecated options:
+
+
+failed to find a Stack API version
+PS C:\Dev\bryan-university\AFS-205\week 7> docker stack deploy --compose-file docker-compose.yml capstoneafs205
+Ignoring unsupported options: build
+
+Ignoring deprecated options:
+
+container_name: Setting the container name is not supported.
+
+failed to find a Stack API version
+PS C:\Dev\bryan-university\AFS-205\week 7> docker stack deploy --compose-file docker-compose.yml
+"docker stack deploy" requires exactly 1 argument.
+See 'docker stack deploy --help'.
+
+Usage:  docker stack deploy [OPTIONS] STACK
+
+Deploy a new stack or update an existing stack
+
+Usage:  docker stack deploy [OPTIONS] STACK
+Deploy a new stack or update an existing stack
+
+Aliases:
+  deploy, up
+
+Options:
+                               from stdin
+      --namespace string       Kubernetes namespace to use
+      --orchestrator string    Orchestrator to use (swarm|kubernetes|all)
+Ignoring unsupported options: build
+
+Ignoring deprecated options:
+
+container_name: Setting the container name is not supported.
+
+failed to find a Stack API version
+PS C:\Dev\bryan-university\AFS-205\week 7> docker stack deploy --version
+unknown flag: --version
+See 'docker stack deploy --help'.
+PS C:\Dev\bryan-university\AFS-205\week 7> docker stack --help
+
+Usage:  docker stack [OPTIONS] COMMAND
+
+Manage Docker stacks
+
+Options:
+      --kubeconfig string     Kubernetes config file
+      --orchestrator string   Orchestrator to use (swarm|kubernetes|all)
+
+Commands:
+  deploy      Deploy a new stack or update an existing stack
+  ls          List stacks
+  ps          List the tasks in the stack
+  rm          Remove one or more stacks
+  services    List the services in the stack
+
+Run 'docker stack COMMAND --help' for more information on a command.
+PS C:\Dev\bryan-university\AFS-205\week 7> docker stack deploy --compose-file--help
+unknown flag: --compose-file--help
+See 'docker stack deploy --help'.
+PS C:\Dev\bryan-university\AFS-205\week 7> docker stack deploy --compose-file --help
+"docker stack deploy" requires exactly 1 argument.
+See 'docker stack deploy --help'.
+
+Usage:  docker stack deploy [OPTIONS] STACK
+
+Deploy a new stack or update an existing stack
+PS C:\Dev\bryan-university\AFS-205\week 7> kubectl get pods
+No resources found in default namespace.
+PS C:\Dev\bryan-university\AFS-205\week 7> kubectl get services
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   39d
+PS C:\Dev\bryan-university\AFS-205\week 7> kubectl get all     
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   39d

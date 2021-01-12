@@ -1,0 +1,72 @@
+
+A hypervisor is a software that makes virtualization possible. It is also called Virtual Machine Monitor. It divides the host system and allocates the resources to each divided virtual environment.
+
+Authentication is the process of ascertaining that somebody really is who he claims to be.
+
+Authorization refers to rules that determine who is allowed to do what. E.g. Adam may be authorized to create and delete databases, while Usama is only authorised to read.
+
+Select all the components of Docker Container lifestyle: All except Create new system
+
+JSON can be used instead of YAML for the Docker compose file. To use the JSON file with composing, the filename should be specified.
+
+On which port does Apache listen http and https both? 443
+
+By default Apache configuration directories are installed under /etc/httpd/ on (RHEL/CentOS/Fedora) and /etc/apache2 on (Debian/Ubuntu).
+
+The default port for HTTP is 80 and HTTPS 443. Checkout defaut port for apache tomcat startup 8443
+
+There is a directive “Listen” in httpd.conf file which allows us to change the default Apache port. With the help of Listen directive we can make Apache listen on different port as well as different interfaces.
+
+How many servers can Apache server have in one machine? 2
+
+DirectoryIndex is the name of first file that Apache looks for when a request comes from a domain. E.g. www.example.com is requested by the client, so Apache will go the document root of that website and look for the index file (first file to display).
+
+Apache Web Server script located /etc/init.d/.Mostly it will be named Apache start.
+
+The basic difference between Worker and MPM is in their process of spawning the child process.
+
+What are techniques and elements of the web acceleration in reserve proxy? Caching, SLL Termination
+
+What are the features of Nginx? All except Express Nginx
+
+What are the features of Nginx server? all
+
+By default Apache runs on http port 80 and https port 443 (for SSL certificate). You can also use netstat command to check ports.
+
+Virtualization is the process of creating a software based, virtual version of something (compute storage, servers, application, etc.).
+
+An application that is being developed and deployed is bundled and wrapped together with all its configuration files and dependencies. This bundle is called a(n) container.
+
+Containers provide an isolated environment for running the application. Containers are a(n) abstraction of the application layer. Each container is a different application.
+
+What are characteristics of Docker architecture? (select all that apply): A REST API which specifies interfaces that programs can use to talk to the daemon and instruct it what to do. / A command line interface (CLI) client (the docker command)./ A server which is a type of long-running program called a daemon process (the docker command).
+
+A server which is a type of long-running program called a daemon process (the docker command).
+
+Select the most used docker commands and the system purpose. All except Player
+
+A Docker Container will be created by running any specific Docker image.
+Use the following command to create a container: docker run -t -i command name
+
+Docker Architecture consists of a Docker Engine which is a client-server application with three major components:
+
+Docker Compose is a tool that lets you define multiple containers and their configurations via a YAML or JSON file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

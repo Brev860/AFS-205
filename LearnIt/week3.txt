@@ -1,0 +1,58 @@
+Apache is the most widely used web server application in the world with more than 50% share in the commercial web server market.
+
+Apache is a modular, process-based web server application that creates a new thread with each simultaneous connection.
+
+Create a folder for our website in /var/www/ by running sudo mkdir /var/www/gci/
+
+Nginx has one master process and several worker processes.
+
+What are containers?
+
+Docker Image is called Redis and wants to run the latest release.
+
+Apache HTTP Server is a cross-platform.
+
+1 Windows/ 2 OS X/ 3 Linux/ 4 Unix/ 5 FreeBSD/ 6 Solaris
+
+1 AWS console/ 2 AWS CLI/ 3 AWS Cloud/ 4 VPS Instances VTM
+
+AWS System Manager is a(n) AWS service that you can use to view and control your infrastructure.
+
+The Docker image help to create Docker containers.
+
+The Docker daemon or docker engine reprents the server.
+
+Explain Registries?
+
+The command should you run to see all running container in Docker.
+
+Write the command to stop the docker container
+
+Docker states command run the image as a container offers the standard docker.
+
+Docker hub is a cloud registry taht which helps you to link to code repositories
+
+Important states of Docker container are build by Running.
+
+Dokcer object labels is a method for applying metadata to docker objects including.
+
+Important states of the containers are running, paused, exited, and restarting.
+
+The common instructions of Dockerfile are FROM, LABEL, RUN, CMD.
+
+Memory-swap is a modified flag that only has meaning if- memory is also set.
+
+Select the important Docker commands. all but pals and falls
+
+How does Systems Manager work? All  but AWS Systems, and Suppor Accessing
+
+What statements describe Configuration files in NGINX? (select all that apply)All but configur an Nginx recog
+
+Installing Apache: sudo apt install apache2
+
+What are the important features of Docker? (select all that apply) all but controller balanceload
+
+List out some important advanced docker command pull list to download images.
+
+The Apache HTTP Server is configured by placing directives in plain text configuration files.
+

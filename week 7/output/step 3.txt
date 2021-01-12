@@ -1,0 +1,80 @@
+PS C:\Dev\bryan-university\AFS-205\week 7> docker rm - $(docker ps -a -q)
+72b9b80a9270
+3a1439aa8320
+4599865597b5
+bf50e73a67a9
+Error: No such container: -
+Error response from daemon: You cannot remove a running container 
+6f7759c9a90b744b66b04720b2e48deee428a5a1f478fad1ce97446ef1b34d3b. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+2b5c72d1aa6bd1201bca88c2adb33c201c345c6be288903f3014401bd8f0bf1b. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+8fef34881ccf1b8ff87153d5d439decfcdd5deedec3b8ee7b0f61cfe30e49972. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+c68cd2cc4a7a461ceb4f8bebad1e0549150bdc4f10fbba85ed990f4d085e33d1. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+cb13158675a0fba6a9ae1e39818f49a9a944e44fc1f8d07ded6aa0805b4fffbc. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+f7bab901d6909ceba0280d71ec19a3361ad7c58a2df43a5ac300d3d3884082a3. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+5ee2d48bb89bc1b10911513eed00a82156d80293905d06bf041c3e372169ad8a. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+27eb4a10f2508cdf4f03a857ebb635b4a2b33ce089d7fbe9122576bb723de037. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+aed39714097bfca6eeb0729ab0e7202d3eec80d6569ee86bf09af01f1bade03b. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+ca7b45676b527b5e43c0d2cba13627656e6656d48ca99ba3bc624d4780bca9a9. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+182a2d47248e686dbada361f02bb7ed35461e543a5a3e8dd25e1a8317740e810. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+3a4364908154a6b387d103076fd626ba089287eb75270bd83bb535b7e3f5e8a4. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+b191c58e00fa4836bcaa18824b2fb4b753017cc9389878b9ec1016040787922e. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+94395df38eabc536cbaf44deb8d40b5d193c5a8dade5b746fdaf55d26717126f. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+a15097bbb99cfe113933752944306b5e63222b5a017caac669e0a2d6878d3797. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+1f61fb03e8dea1fc2d129923f07f4a212b686ecaab6c5f0d7aafeef8afc9fd08. 
+Stop the container before attempting removal or force remove      
+Error response from daemon: You cannot remove a running container 
+2d360c9411245fa9be3eadb0985711b68454d436129c6f86eb01f6632b97f796. 
+Stop the container before attempting removal or force remove      
+PS C:\Dev\bryan-university\AFS-205\week 7> docker container ls    
+CONTAINER ID   IMAGE                  COMMAND                  CREATED      STATUS      PORTS     NAMES
+6f7759c9a90b   bfe3a36ebd25           "/coredns -conf /etc…"   4 days ago   Up 4 days             k8s_coredns_coredns-f9fd979d6-8ck7v_kube-system_783f38b9-3bc1-4465-9beb-6620a99ba981_4
+2b5c72d1aa6b   79da37e5a3aa           "/kube-vpnkit-forwar…"   4 days ago   Up 4 days             k8s_vpnkit-controller_vpnkit-controller_kube-system_e3fdac1e-1cd8-499a-966f-7b9b8d6b01ac_4
+8fef34881ccf   e704287ce753           "/storage-provisione…"   4 days ago   Up 4 days             k8s_storage-provisioner_storage-provisioner_kube-system_a6be666f-768a-4075-a886-31636e36330d_23     
+c68cd2cc4a7a   bfe3a36ebd25           "/coredns -conf /etc…"   4 days ago   Up 4 days             k8s_coredns_coredns-f9fd979d6-94fkm_kube-system_b241560f-9720-47ce-b880-af8beca20499_4
+cb13158675a0   cdef7632a242           "/usr/local/bin/kube…"   4 days ago   Up 4 days             k8s_kube-proxy_kube-proxy-l75v5_kube-system_71f1f17f-ae06-4695-99c4-d4913e57ffaa_4
+f7bab901d690   k8s.gcr.io/pause:3.2   "/pause"                 4 days ago   Up 4 days             k8s_POD_storage-provisioner_kube-system_a6be666f-768a-4075-a886-31636e36330d_3
+5ee2d48bb89b   k8s.gcr.io/pause:3.2   "/pause"                 4 days ago   Up 4 days             k8s_POD_vpnkit-controller_kube-system_e3fdac1e-1cd8-499a-966f-7b9b8d6b01ac_4
+27eb4a10f250   k8s.gcr.io/pause:3.2   "/pause"                 4 days ago   Up 4 days             k8s_POD_coredns-f9fd979d6-8ck7v_kube-system_783f38b9-3bc1-4465-9beb-6620a99ba981_5
+aed39714097b   k8s.gcr.io/pause:3.2   "/pause"                 4 days ago   Up 4 days             k8s_POD_coredns-f9fd979d6-94fkm_kube-system_b241560f-9720-47ce-b880-af8beca20499_4
+ca7b45676b52   k8s.gcr.io/pause:3.2   "/pause"                 4 days ago   Up 4 days             k8s_POD_kube-proxy-l75v5_kube-system_71f1f17f-ae06-4695-99c4-d4913e57ffaa_4
+418805ac589d   0369cf4303ff           "etcd --advertise-cl…"   4 days ago   Up 4 days             k8s_etcd_etcd-docker-desktop_kube-system_c7cc6a3c3118f127f5fd469ef69477e0_4
+182a2d47248e   a301be0cd44b           "kube-apiserver --ad…"   4 days ago   Up 4 days             k8s_kube-apiserver_kube-apiserver-docker-desktop_kube-system_2085f5be68201a12aeffb940f7ba4272_4     
+3a4364908154   9b60aca1d818           "kube-controller-man…"   4 days ago   Up 4 days             k8s_kube-controller-manager_kube-controller-manager-docker-desktop_kube-system_07d42b7bf3823b30f57219558fcb55e2_4
+b191c58e00fa   aaefbfa906bd           "kube-scheduler --au…"   4 days ago   Up 4 days             k8s_kube-scheduler_kube-scheduler-docker-desktop_kube-system_ee4c94eb845abf1878fb3c4c489b1365_19    
+94395df38eab   k8s.gcr.io/pause:3.2   "/pause"                 4 days ago   Up 4 days             k8s_POD_kube-scheduler-docker-desktop_kube-system_ee4c94eb845abf1878fb3c4c489b1365_2
+a15097bbb99c   k8s.gcr.io/pause:3.2   "/pause"                 4 days ago   Up 4 days             k8s_POD_kube-controller-manager-docker-desktop_kube-system_07d42b7bf3823b30f57219558fcb55e2_4       
+1f61fb03e8de   k8s.gcr.io/pause:3.2   "/pause"                 4 days ago   Up 4 days             k8s_POD_kube-apiserver-docker-desktop_kube-system_2085f5be68201a12aeffb940f7ba4272_4
+2d360c941124   k8s.gcr.io/pause:3.2   "/pause"                 4 days ago   Up 4 days             k8s_POD_etcd-docker-desktop_kube-system_c7cc6a3c3118f127f5fd469ef69477e0_4
+PS C:\Dev\bryan-university\AFS-205\week 7> 

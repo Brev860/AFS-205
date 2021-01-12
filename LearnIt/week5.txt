@@ -1,0 +1,53 @@
+Nginx has simultaneous connections with low memory.
+
+What is a load balancer? A device that distributes network or application traffic across a duster of servers.
+
+We can access elastic load balancing from multiple sources of microservices.
+
+The advantages of using Docker container are simple configuration and interaction with Docker Compose.
+
+The docker ps command line allows docker to view files in the container.
+
+From what microservices can we access elastic load balancing? ALl except Transport TCP/SSL
+
+What are the different types of load balancers? Network and Classic
+
+What are the different types of databases in AWS? All except ECSDB
+
+ A Load balancer accepts incoming traffic from clients and routes requests to EC2 in one or more available Zones.
+
+How is Amazon S3 Transfer Acceleration related to Ngnix? (select all that apply) All but Synchronizesto bucket...
+
+What are types of instance store volumes? All but TRIM()
+
+We need redirection because we want to tell the visitor that the current page is not appropriate or has been moved to a new location.
+
+What are the reasons we should redirect? All but 301
+
+What are different type of redirects?all but 305 and 404
+
+When do we use 301 redirects? All Refers to the http status code
+
+302 refers to the HTTP status code.
+
+When do we use 302 redirects? All but If user forgets password and user name
+
+What are the different HTTP status codes used for web? 301
+
+A(n) load balancer is a device that distrupts network or application traffic accross a cluster of servers.
+
+Multiple hosting systems maxResquestWorkers and MaxConnectionsPerChild in Apache have the ability to handle more than 1000 simultaneous requests.
+
+Create the ability to set root password authentication with Nginxon Dockers using utilities htpasswd in the /etc/nginx
+
+
+
+
+
+
+
+
+
+
+
+

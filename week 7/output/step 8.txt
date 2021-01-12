@@ -1,0 +1,159 @@
+PS C:\Dev\bryan-university\AFS-205\week 7> skaffold build
+Generating tags...
+ - fsw205/nginx -> fsw205/nginx:6a7ac18-dirty
+ - fsw205/node-fsw205 -> fsw205/node-fsw205:6a7ac18-dirty
+ - fsw205/mongo -> fsw205/mongo:6a7ac18-dirty
+ - fsw205/redis -> fsw205/redis:6a7ac18-dirty
+Checking cache...
+ - fsw205/nginx: Not found. Building
+ - fsw205/node-fsw205: Not found. Building
+ - fsw205/mongo: Not found. Building
+ - fsw205/redis: Not found. Building
+Found [docker-desktop] context, using local docker daemon.
+Building [fsw205/redis]...
+Sending build context to Docker daemon  3.072kB
+Step 1/5 : FROM                 redis:latest
+ ---> ef47f3b6dc11
+Step 2/5 : LABEL       author="AFS205"
+ ---> Using cache
+ ---> c1f01b05114d
+Step 3/5 : COPY        ./.docker/config/redis.production.conf /etc/redis.conf
+ ---> Using cache
+ ---> d3c830f081f1
+Step 4/5 : EXPOSE      6379
+ ---> Using cache
+ ---> 21e320d694c4
+Step 5/5 : ENTRYPOINT  ["redis-server", "/etc/redis.conf"]
+ ---> Using cache
+ ---> 948fa486530f
+Successfully built 948fa486530f
+Successfully tagged fsw205/redis:6a7ac18-dirty
+Building [fsw205/node-fsw205]...
+Sending build context to Docker daemon  2.015MB
+Step 1/12 : FROM node:alpine
+ ---> 6a9367b2c744
+Step 2/12 : LABEL author="AFS205"
+ ---> Using cache
+ ---> 2e006f03c1d7
+Step 3/12 : WORKDIR /var/www/AFS205
+ ---> Using cache
+ ---> c6243978f66a
+Step 4/12 : COPY ./package.json .
+ ---> Using cache
+ ---> 8fb4160abf25
+Step 5/12 : COPY ./package-lock.json .
+ ---> Using cache
+ ---> caaf474fe022
+Step 6/12 : ENV NODE_ENV production
+ ---> Using cache
+ ---> d67bba9c5ff8
+Step 7/12 : RUN npm install -g pm2@latest
+ ---> Using cache
+ ---> ef0b5fcc29d7
+Step 8/12 : RUN npm install
+ ---> Using cache
+ ---> 0141b57136d3
+Step 9/12 : COPY    . .
+ ---> d7aa5c5ff1e6
+Step 10/12 : RUN mkdir -p /var/log/pm2
+ ---> Running in a9896ec6d417
+ ---> 47622f96e2c0
+Step 11/12 : EXPOSE             8080
+ ---> Running in 60e9bce7e66f
+ ---> fb34dfa678af
+Step 12/12 : ENTRYPOINT ["pm2", "start", "server.js","--name","AFS205","--log","/var/log/pm2/pm2.log","--watch","--no-daemon"]
+ ---> Running in 35fe5e69c2fd
+ ---> 16ae70b1fe19
+Successfully built 16ae70b1fe19
+Successfully tagged fsw205/node-fsw205:6a7ac18-dirty
+Building [fsw205/nginx]...
+Sending build context to Docker daemon  1.327MB
+Step 1/12 : FROM nginx:alpine
+ ---> 629df02b47c8
+Step 2/12 : LABEL author="AFS205"
+ ---> Using cache
+ ---> ed9bc3112e8b
+Step 3/12 : VOLUME /var/cache/nginx
+ ---> Using cache
+ ---> ff7f5c74fb1a
+Step 4/12 : COPY ./.docker/config/nginx.production.conf /etc/nginx/nginx.conf
+ ---> Using cache
+ ---> 138c45561716
+Step 5/12 : COPY ./public /var/www/public
+ ---> 9e220f5a33c1
+Step 6/12 : COPY ./.certs/server.crt    /etc/nginx/server.crt
+ ---> b9054283586a
+Step 7/12 : COPY ./.certs/server.key    /etc/nginx/server.key
+ ---> 12a40730d51e
+Step 8/12 : COPY ./.certs/dhparam.pem   /etc/nginx/dhparam.pem
+ ---> 8486b41099ee
+Step 9/12 : RUN chmod 600 /etc/nginx/server.key
+ ---> Running in 585df9ec9013
+ ---> 3d56e79a6d61
+Step 10/12 : EXPOSE 80 443
+ ---> Running in fabbc0d4e57e
+ ---> e42fff24b952
+Step 11/12 : ENTRYPOINT ["nginx"]
+ ---> Running in 3d642cd19440
+ ---> dbf04b83a171
+Step 12/12 : CMD ["-g", "daemon off;"]
+ ---> Running in 09de2276a2c2
+ ---> a7029cb98984
+Successfully built a7029cb98984
+Successfully tagged fsw205/nginx:6a7ac18-dirty
+Building [fsw205/mongo]...
+Sending build context to Docker daemon  27.65kB
+Step 1/8 : FROM mongo
+ ---> ef5c2207766e
+ ---> Using cache
+ ---> 2a90caef1425
+Step 3/8 : RUN apt-get update && apt-get install -y cron netcat-traditional netcat-openbsd
+ ---> Using cache
+ ---> 9a880c10509c
+Step 4/8 : COPY ./.docker/mongo_scripts /mongo_scripts
+ ---> 284cc452d0dc
+Step 5/8 : RUN chmod +rx /mongo_scripts/*.sh
+ ---> Running in 8db0bb29d2fc
+ ---> f167aedc4bdc
+Step 6/8 : RUN touch /.firstrun
+ ---> Running in 9d446c0bc956
+ ---> 3d8259bfd585
+Step 7/8 : EXPOSE 27017
+ ---> Running in 18f6d3f5d497
+ ---> 0ed516d969b0
+Step 8/8 : ENTRYPOINT ["/mongo_scripts/run.sh"]
+ ---> Running in 7b12b56c2a53
+ ---> 75669a51ff03
+Successfully built 75669a51ff03
+Successfully tagged fsw205/mongo:6a7ac18-dirty
+Help improve Skaffold with our 2-minute anonymous survey: run 'skaffold survey'
+PS C:\Dev\bryan-university\AFS-205\week 7> skaffold dev  
+Listing files to watch...
+ - fsw205/nginx
+ - fsw205/node-fsw205
+ - fsw205/mongo
+ - fsw205/redis
+time="2021-01-12T15:41:10-05:00" level=warning msg=".k8s/*.yml did not match any file"
+Generating tags...
+ - fsw205/nginx -> fsw205/nginx:6a7ac18-dirty
+ - fsw205/node-fsw205 -> fsw205/node-fsw205:6a7ac18-dirty
+ - fsw205/mongo -> fsw205/mongo:6a7ac18-dirty
+ - fsw205/redis -> fsw205/redis:6a7ac18-dirty
+Checking cache...
+ - fsw205/nginx: Found Locally
+ - fsw205/node-fsw205: Found Locally
+ - fsw205/mongo: Found Locally
+ - fsw205/redis: Found Locally
+Tags used in deployment:
+ - fsw205/nginx -> fsw205/nginx:a7029cb98984590222dd164aaa59d4d201f6d78a91bfa0910426349345fa0df9
+ - fsw205/node-fsw205 -> fsw205/node-fsw205:16ae70b1fe197ecd8219aa8ee30e624d967740165900fe796ae3f1435aac0e78
+ - fsw205/mongo -> fsw205/mongo:75669a51ff0307d1c85e3760baf13ed79492e1f6b46b2cb6ef2e637ee58e732a
+ - fsw205/redis -> fsw205/redis:948fa486530f7d4a4dcb1f70f1c2d7cbb013b98575a8926e769887a2eb6f6b6c
+Starting deploy...
+time="2021-01-12T15:41:10-05:00" level=warning msg=".k8s/*.yml did not match any file"
+Waiting for deployments to stabilize...
+Deployments stabilized in 10.9476ms
+Press Ctrl+C to exit
+time="2021-01-12T15:41:11-05:00" level=warning msg=".k8s/*.yml did not match any file"
+Watching for changes...
+time="2021-01-12T15:41:12-05:00" level=warning msg=".k8s/*.yml did not match any file"

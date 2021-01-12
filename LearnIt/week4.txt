@@ -1,0 +1,51 @@
+The steps of the docker container life-cycle are identified by three major elements.
+
+We can run two different Apache servers at one time on a Linux machine, but the condition for that is they should listen on different ports and we can change the ports with listen directive of Apache.
+
+Nginx is a web server and a reverse proxy server for HTTP, HTTPS, SMTP, POP3 and IMAP protocols.
+
+What are some special features of Nginx?All but binary upgrade
+
+Nginx uses the reactor pattern.
+
+In Nginx, how you can prevent processing requests with undefined server names? Server { listen 80; server_name “ “ ; return 444; }
+
+The reverse proxy server can hide the presence and characteristics of the origin server.
+
+In Nginx server, the master process reads as well as evaluates configuration and maintains worker processes.
+
+What are the differences between Apache and Nginx? All but unlike....
+
+In what language was Nginx written? C
+
+The main purpose of the -s parameter is to run the executable files.
+
+The main task of the Nginx web server is to deploy dynamic HTTP content on a network using SCGI, Fast CGI handlers for scripts, WSGI application servers or Phusion passenger module.
+
+What are the main Nginx error types? 502, 503
+
+The sub status directives are mainly used to know the current status of Nginx. You can know the current active connections, total connections that are being accepted and all the handled current number of read, write and wait connections.
+
+On which port does Apache listen http and https? TCP
+
+Nginx can deploy dynamic HTTP content on a network using of SCGI, FastCGI handlers for scripts, WSGI application servers or phusion Passenger module. Nginx can also serve as a load balancer.
+
+HTTP Daemon is a software program taht runs in the background of a web server and waits for the incoming server request,
+
+How do you install Apache Server on your Linux machine? yum
+
+There is a directive Listen* in httpd.conf file which allows us to change the default Apahce port. With the help of listen directive we can make Apache listen on different port as different interfaces.
+
+The reverse proxy can hide the presence and characteristic of the origin server. It acts as an intermediate between internet cloud and web server.
+
+Nginx is a type of an open source web server which is especially used for reverse proxy, load balancer, mail proxy and for HTTP cache.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+PS C:\Dev\bryan-university\AFS-205\week 7> kubectl get pods       
+No resources found in default namespace.
+PS C:\Dev\bryan-university\AFS-205\week 7> kubectl get services   
+NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE 
+kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   44d 
+PS C:\Dev\bryan-university\AFS-205\week 7> kubectl get all        
+NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   44d
+PS C:\Dev\bryan-university\AFS-205\week 7> 

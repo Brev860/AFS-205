@@ -1,0 +1,24 @@
+PS C:\Dev\bryan-university\AFS-205\week 7> kompose convert -f docker-compose.yml -o ./output   
+INFO Network fsw205-network is detected at Source, shall be converted to equivalent Ne
+tworkPolicy at Destination
+INFO Network fsw205-network is detected at Source, shall be converted to equivalent Ne
+tworkPolicy at Destination
+INFO Network fsw205-network is detected at Source, shall be converted to equivalent Ne
+tworkPolicy at Destination
+INFO Network fsw205-network is detected at Source, shall be converted to equivalent Ne
+tworkPolicy at Destination
+INFO Kubernetes file "output\\mongo-service.yaml" created
+INFO Kubernetes file "output\\nginx-service.yaml" created
+INFO Kubernetes file "output\\node-service.yaml" created
+INFO Kubernetes file "output\\redis-service.yaml" created
+INFO Kubernetes file "output\\mongo-deployment.yaml" created
+INFO Kubernetes file "output\\docker-env-mongo-production-env-configmap.yaml" created 
+
+INFO Kubernetes file "output\\fsw205-network-networkpolicy.yaml" created
+INFO Kubernetes file "output\\nginx-deployment.yaml" created
+INFO Kubernetes file "output\\fsw205-network-networkpolicy.yaml" created
+INFO Kubernetes file "output\\node-deployment.yaml" created
+INFO Kubernetes file "output\\docker-env-app-production-env-configmap.yaml" created   
+INFO Kubernetes file "output\\fsw205-network-networkpolicy.yaml" created
+INFO Kubernetes file "output\\redis-deployment.yaml" created
+INFO Kubernetes file "output\\fsw205-network-networkpolicy.yaml" created
